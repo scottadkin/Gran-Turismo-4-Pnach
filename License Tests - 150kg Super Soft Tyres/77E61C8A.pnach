@@ -1,0 +1,32 @@
+gametitle=Gran Turismo 4 []NTSC [77E61C8A]
+
+//Pnatch to recreate effects used for the 150kg super soft license test videos https://www.youtube.com/watch?v=XUtai5c0ScQ
+
+//FORCE saftey car rubberband to 175%
+patch=1,EE,21C02E10,extended,3fe00000
+
+// car weight with pace car
+patch=1,EE,21BFB270,extended,43160000
+
+//car weight without pace car
+patch=1,EE,21BF8B90,extended,43160000
+
+//license test car grip 3ff33331 = super soft racing tyres
+
+//without pace car
+patch=1,EE,21BF8F60,extended,3ff33331
+patch=1,EE,21BF9524,extended,3ff33331
+patch=1,EE,21BF8F64,extended,3ff33331
+patch=1,EE,21BF9528,extended,3ff33331
+//cobble
+patch=1,EE,21BF8F7c,extended,3ff33331
+patch=1,EE,21BF9540,extended,3ff33331
+
+//with pace car
+patch=1,EE,21BFB640,extended,3ff33331
+patch=1,EE,21BFBC04,extended,3ff33331
+patch=1,EE,21BFB644,extended,3ff33331
+patch=1,EE,21BFBC08,extended,3ff33331
+//cobble
+patch=1,EE,21BFB65C,extended,3ff33331
+patch=1,EE,21BFBC20,extended,3ff33331
