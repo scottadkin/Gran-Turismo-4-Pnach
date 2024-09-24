@@ -1,0 +1,131 @@
+gametitle=Gran Turismo 4 []NTSC [77E61C8A]
+
+
+
+// car weight with pace car
+patch=1,EE,21BFB270,extended,43160000
+
+//car weight without pace car
+patch=1,EE,21BF8B90,extended,43160000
+
+patch=1,EE,21C02E10,extended,3fe00000
+
+//max rpm 1 lap events
+patch=1,EE,11BFB428,extended,00007d00
+
+//max rpm 
+patch=1,EE,11BF8D48,extended,00007d00
+
+//451c4000
+//car power band license test without pace car
+patch=1,EE,21bf8ce8,extended,451c4000
+patch=1,EE,21bf8cec,extended,451c4000
+patch=1,EE,21bf8cf0,extended,451c4000
+patch=1,EE,21bf8cf4,extended,451c4000
+patch=1,EE,21bf8cf8,extended,451c4000
+patch=1,EE,21bf8cfc,extended,451c4000
+patch=1,EE,21bf8d00,extended,451c4000
+patch=1,EE,21bf8d04,extended,451c4000
+patch=1,EE,21bf8d08,extended,451c4000
+patch=1,EE,21bf8d0C,extended,451c4000
+patch=1,EE,21bf8d10,extended,451c4000
+patch=1,EE,21bf8d14,extended,451c4000
+patch=1,EE,21bf8d18,extended,451c4000
+patch=1,EE,21bf8d1c,extended,451c4000
+patch=1,EE,21bf8d20,extended,451c4000
+patch=1,EE,21bf8d24,extended,451c4000
+patch=1,EE,21bf8d28,extended,451c4000
+patch=1,EE,21bf8d2c,extended,451c4000
+patch=1,EE,21bf8d30,extended,451c4000
+patch=1,EE,21bf8d34,extended,451c4000
+patch=1,EE,21bf8d38,extended,451c4000
+patch=1,EE,21bf8d3c,extended,451c4000
+patch=1,EE,21bf8d40,extended,451c4000
+patch=1,EE,21bf8d44,extended,451c4000
+
+//car power band license test with pace car
+patch=1,EE,21bfb3c8,extended,451c4000
+patch=1,EE,21bfb3cc,extended,451c4000
+patch=1,EE,21bfb3d0,extended,451c4000
+patch=1,EE,21bfb3d4,extended,451c4000
+patch=1,EE,21bfb3d8,extended,451c4000
+patch=1,EE,21bfb3dc,extended,451c4000
+patch=1,EE,21bfb3e0,extended,451c4000
+patch=1,EE,21bfb3e4,extended,451c4000
+patch=1,EE,21bfb3e8,extended,451c4000
+patch=1,EE,21bfb3eC,extended,451c4000
+patch=1,EE,21bfb3f0,extended,451c4000
+patch=1,EE,21bfb3f4,extended,451c4000
+patch=1,EE,21bfb3f8,extended,451c4000
+patch=1,EE,21bfb3fC,extended,451c4000
+patch=1,EE,21bfb400,extended,451c4000
+patch=1,EE,21bfb404,extended,451c4000
+patch=1,EE,21bfb408,extended,451c4000
+patch=1,EE,21bfb40c,extended,451c4000
+patch=1,EE,21bfb410,extended,451c4000
+patch=1,EE,21bfb414,extended,451c4000
+patch=1,EE,21bfb418,extended,451c4000
+patch=1,EE,21bfb41c,extended,451c4000
+patch=1,EE,21bfb420,extended,451c4000
+patch=1,EE,21bfb424,extended,451c4000
+
+
+//license test car grip 3ff33331 = super soft racing tyres
+
+//without pace car
+patch=1,EE,21BF8F60,extended,3ff33331
+patch=1,EE,21BF9524,extended,3ff33331
+patch=1,EE,21BF8F64,extended,3ff33331
+patch=1,EE,21BF9528,extended,3ff33331
+//cobble
+patch=1,EE,21BF8F7c,extended,3ff33331
+patch=1,EE,21BF9540,extended,3ff33331
+
+//with pace car
+patch=1,EE,21BFB640,extended,3ff33331
+patch=1,EE,21BFBC04,extended,3ff33331
+patch=1,EE,21BFB644,extended,3ff33331
+patch=1,EE,21BFBC08,extended,3ff33331
+patch=1,EE,21BFB65C,extended,3ff33331
+patch=1,EE,21BFBC20,extended,3ff33331
+
+
+//--------------------------------------------//
+
+
+// Useful tool to get hex values of floats https://www.h-schmidt.net/FloatConverter/IEEE754.html
+// common values(FLOATS), for example replace 3fc00000(1.5 = 150% for the rubberband value) with 3dcccccd(0.1 = 10%) and the AI will run at 10% speed
+//-1 bf800000
+//-0.5 bf000000
+//-0.25 be800000
+//-0.125 be000000
+//0: 0x00000000
+//0.1: "3dcccccd",
+//0.2: "3e4ccccd",
+//0.25: "3e800000",
+//0.3: "3e99999a",
+//0.4: "3ecccccd",
+//0.5:  "3f000000",
+//0.6: "3f19999a",
+//0.7: "3f400000",
+//0.8: "3f4ccccd",
+//0.9: "3f666666",
+//1: "3f800000",
+//1.05: "3f866666",
+//1.1: "3f8ccccd",
+//1.15: "3f933333",
+//1.2: "3f99999a",
+//1.25: "3fa00000",
+//1.3: "3fa66666",
+//1.4: "3fb33333",
+//1.5:"3fc00000",
+//1.75: "3fe00000",
+//1.8 "3fe66666"
+//1.9 "3ff33333"
+//2: "40000000",
+//1000.0 447a0000
+//25000.0 451c4000
+
+
+//150 decimal = 00000096 // float 43160000
+//32000 decimal = 00000c80
