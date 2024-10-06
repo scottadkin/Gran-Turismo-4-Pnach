@@ -1,0 +1,5 @@
+gametitle=Gran Turismo 4 []NTSC [77E61C8A]
+
+//Driving Mission Car Weight - Player Car
+patch=1,EE,21C07800,extended,00000096
+
